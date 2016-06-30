@@ -6,10 +6,13 @@ angular
     }
 
     this.data = function () {
-      return $http.get('./data/MOCK_DATA.json').then(extraerData);
+      return $http.get('./data/datosUiGridEjercicio.json').then(extraerData);
     }
 
     this.sexo = function () {
-      return $http.get('./data/animales.json').then(extraerData);
+      return $http.get('./data/sexo.json').then(extraerData);
+    }
+    this.cabello = function () {
+      return $http.get('./data/cabello.json').then(extraerData);
     }
   })

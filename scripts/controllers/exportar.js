@@ -57,7 +57,18 @@ angular
         },
         { field: 'apellido', name: 'apellido'},
         { field: 'email', name: 'mail'},
-        { field: 'genero', name: 'sexo'
+        { field: 'sexo', name: 'sexo'
+        // filtro de busqueda.
+          ,filter: {
+            // term: '1',
+            type: uiGridConstants.filter.SELECT,
+            selectOptions: [
+              {value: '1', label: 'Masculino'},
+              {value: '2', label: 'Femenino'},
+              {value: '3', label: 'Otro'}
+            ]
+          }
+           { field: 'sexo', name: 'sexo'
         // filtro de busqueda.
           ,filter: {
             // term: '1',
@@ -65,12 +76,16 @@ angular
             selectOptions: [
               {value: '1', label: 'Masculino'},
               {value: '2', label: 'Femenino'}
+              {value: '3', label: 'Otro'}
             ]
           }
+
+
+
           //filtro de los datos
           ,cellFilter: 'sexo'
         },
-        { field: 'fecha_nacimiento', name: 'fechaNacimiento'
+        { field: 'fechaNac', name: 'fechaNacimiento'
           ,type: 'date'
           ,cellFilter: "date: 'dd-MM-yyyy'"
         }

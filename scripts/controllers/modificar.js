@@ -77,7 +77,7 @@ angular
         },
         { field: 'apellido', name: 'apellido'},
         { field: 'email', name: 'mail'},
-        { field: 'genero', name: 'sexo'
+        { field: 'sexo', name: 'sexo'
         // filtro de busqueda.
           ,filter: {
             // term: '1',
@@ -90,7 +90,7 @@ angular
           ,editDropdownIdLabel: 'value'
           ,cellFilter: 'sexo'
         },
-        { field: 'fecha_nacimiento', name: 'fechaNacimiento'
+        { field: 'fechaNac', name: 'fechaNacimiento'
         }
       ];
     }
